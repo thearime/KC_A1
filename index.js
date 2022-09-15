@@ -16,6 +16,7 @@ const specsElement = document.getElementById("specs")
 const buyButtonElement = document.getElementById("buy-button")
 const descriptionElement = document.getElementById("description");
 const imgElement = document.getElementById("img");
+const priceElement = document.getElementById("price");
 
 let computers = []
 let salary = 0
@@ -51,6 +52,7 @@ const handleComputerChange = (e) => {
     imgElement.src = baseURL + selectedComputer.image;
     descriptionElement.innerText = selectedComputer.description;
     infoContainerElement.innerText = selectedComputer.title;
+    priceElement.innerText = selectedComputer.price + "NOK"
     
 }
 
